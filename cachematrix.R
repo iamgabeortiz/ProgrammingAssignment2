@@ -14,6 +14,15 @@
 ## the value of the inverse in the cache via the setsolve function.
 ## END Overall Explanation ##
 
+## BEGIN EXAMPLE ##                     
+## > x <- matrix(rnorm(25), nrow = 5)   //Create matrix
+## > s <- makeCacheMatrix(x)            //Create special matrix
+## > s$get()                            //Return the matrix
+## > cacheSolve(s)                      //Return the inverse
+## > cacheSolve(s)                      //Second call will return
+##                                      //the cached version
+## END EXAMPLE ##
+
 ## BEGIN FUNCTIONS ##
 ## This function creates a special "matrix" object that can cache its inverse.
 
